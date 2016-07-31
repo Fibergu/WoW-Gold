@@ -1,10 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<script src="chopper.js"></script>
+<link rel="stylesheet" href="Chopper.css" />
+<meta charset="utf-8" />
+<script src="chopperi.js"></script>
+<title>Calculations</title>
 </head>
 <body>
-<form>
+
+<div id="page">
+<div id="chopperTitle">
+<h1>Mekgineer's Chopper/Mechano-Hog</h1>
+</div>
+<div id="chopperInfo">
+
+<p>This tool will calculate the total cost for a Chopper
+and determine the cheapest way to craft it. </br></br>
+If you have <strong>Mining</strong> and <strong>Alchemy:</strong> Put a price in every box. </br></br>
+If you don't have <strong>Alchemy:</strong> Put a price in every box except <b>"Saronite Bar"</b>.</br></br>
+If you don't have <strong>Mining:</strong> Put a price in every box except <b>"Saronite Bar"</b> and <b>"Titanium Bar"</b></br>
+</p>
+</div>
+<p id="warning">*ONLY USE NUMBERS*</p></br>
+
+<form id="chopper">
 Titansteel Bar: <input type="text" id="titansteel"></br>
 
 Titanium Bar: <input type="text" id="titanium"></br>
@@ -21,15 +40,17 @@ Handful of Cobalt Bolts: <input type="text" id="bolts"></br>
 
 Arctic Fur: <input type="text" id="arctic"></br>
 
-<input type="button" onclick="totalPrice()" value="Click here!"</button>
+<input type="button" onclick="totalPrice()" value="Calculate"</button>
 
-<input type="checkbox" id="Transmute">Transmutation Master
+<input type="checkbox" id="transmute">Transmutation Master
 </form>
 
 <p id="total"></p>
 </br>
 <p id="describe"></p>
-
+</div>
+</div>
+</div>
 
 
 </body>
