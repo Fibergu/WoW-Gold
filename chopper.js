@@ -9,15 +9,15 @@ var totalPrice = function() {
 	
 	var titaniumBar=document.getElementById('titanium').value;
    
-    var saroniteBar=document.getElementById('saronite').value;
+        var saroniteBar=document.getElementById('saronite').value;
 
 	var eternalFire=document.getElementById('fire').value;
 
-    var eternalEarth=document.getElementById('earth').value;
+        var eternalEarth=document.getElementById('earth').value;
 
-    var eternalShadow=document.getElementById('shadow').value;
+        var eternalShadow=document.getElementById('shadow').value;
 
-    var cobaltBolts=document.getElementById('bolts').value;
+        var cobaltBolts=document.getElementById('bolts').value;
 
 	var arcticFur=document.getElementById('arctic').value;
     
@@ -53,6 +53,7 @@ var totalPrice = function() {
 	
 	//STATEMENTS START HERE//
  
+       //Checks if the checkbox is checked//
 
 if(transmute.checked) {
 	saroniteSummary = (saroniteBar * 230.4) + (eternalFire * 12) + (eternalEarth * 12)
