@@ -1,5 +1,4 @@
 
-
 //Function that determines the cost of a chopper and what materials are the cheapest.//
 
 var totalPrice = function() {
@@ -21,7 +20,11 @@ var totalPrice = function() {
     var cobaltBolts=document.getElementById('bolts').value;
 
 	var arcticFur=document.getElementById('arctic').value;
-
+    
+	//Transmute//
+	
+	var transmute = document.getElementById('transmute');
+	
 	//Math variables//
 	
 	
@@ -49,6 +52,24 @@ var totalPrice = function() {
 	
 	
 	//STATEMENTS START HERE//
+ 
+
+if(transmute.checked) {
+	saroniteSummary = (saroniteBar * 230.4) + (eternalFire * 12) + (eternalEarth * 12)
+		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
+		console.log(saroniteSummary  + "CHECKED")
+}
+ 
+ else {
+	 saroniteSummary = (saroniteBar * 288) + (eternalFire * 12) + (eternalEarth * 12)
+		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
+		console.log(saroniteSummary + "NOT CHECKED")
+ }
+ 
+ 
+ 
+ 
+ 
  
 if(titaniumBar == 0){
 		if(saroniteBar == 0) {		    
