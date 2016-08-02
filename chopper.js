@@ -58,12 +58,15 @@ var totalPrice = function() {
 if(transmute.checked) {
 	saroniteSummary = (saroniteBar * 230.4) + (eternalFire * 12) + (eternalEarth * 12)
 		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
+		
+	saroniteAmount = 230;	
 		console.log(saroniteSummary  + "CHECKED")
 }
  
  else {
 	 saroniteSummary = (saroniteBar * 288) + (eternalFire * 12) + (eternalEarth * 12)
 		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
+	 saroniteAmount = 288;	
 		console.log(saroniteSummary + "NOT CHECKED")
  }
  
