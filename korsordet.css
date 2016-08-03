@@ -5,6 +5,7 @@ body {
 #page {
   padding: 0px;
   border:1px solid black;
+  margin: 0;
 }
 #ord {
   width: 40px;
@@ -18,5 +19,4 @@ body {
   height: 40px;
   text-align: center;
   font-size: 7px;
-  margin-top: 10px;
 }
