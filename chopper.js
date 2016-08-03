@@ -9,15 +9,15 @@ var totalPrice = function() {
 	
 	var titaniumBar=document.getElementById('titanium').value;
    
-        var saroniteBar=document.getElementById('saronite').value;
+    var saroniteBar=document.getElementById('saronite').value;
 
 	var eternalFire=document.getElementById('fire').value;
 
-        var eternalEarth=document.getElementById('earth').value;
+    var eternalEarth=document.getElementById('earth').value;
 
-        var eternalShadow=document.getElementById('shadow').value;
+    var eternalShadow=document.getElementById('shadow').value;
 
-        var cobaltBolts=document.getElementById('bolts').value;
+    var cobaltBolts=document.getElementById('bolts').value;
 
 	var arcticFur=document.getElementById('arctic').value;
     
@@ -53,21 +53,19 @@ var totalPrice = function() {
 	
 	//STATEMENTS START HERE//
  
-       //Checks if the checkbox is checked//
 
 if(transmute.checked) {
 	saroniteSummary = (saroniteBar * 230.4) + (eternalFire * 12) + (eternalEarth * 12)
 		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
-		
-	saroniteAmount = 230;	
 		console.log(saroniteSummary  + "CHECKED")
+	var saroniteAmount = 230;	
 }
  
  else {
 	 saroniteSummary = (saroniteBar * 288) + (eternalFire * 12) + (eternalEarth * 12)
 		+ (eternalShadow * 12) + (cobaltBolts * 40) + (arcticFur * 2) + (8000 + 3000 + 1500);
-	 saroniteAmount = 288;	
 		console.log(saroniteSummary + "NOT CHECKED")
+    var saroniteAmount = 288;
  }
  
  
@@ -79,7 +77,7 @@ if(titaniumBar == 0){
 		if(saroniteBar == 0) {		    
 			var titansteelPost=document.getElementById('total').innerHTML="Total cost: " + titansteelSummary + "g";
 			var titansteelShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titansteel Bars</b>, <b>Handful of Cobalt Bolts</b> and <b>Arctic Fur!</b>";
+	<b>12 Titansteel Bars</b>, <b>40 Handful of Cobalt Bolts</b> and <b>2 Arctic Fur!</b>";
 	console.log(titansteelSummary + "null titansteel")
 	console.log(titansteelBar)
 		}
@@ -87,17 +85,16 @@ if(titaniumBar == 0){
 		else if(titansteelBar == 0){
 			var saronitePost=document.getElementById('total').innerHTML="Total cost: " + saroniteSummary + "g";
 			var saroniteShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Saronite Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts\
-	and <b>Arctic Fur!</b>";
+	<b>" + saroniteAmount + " " + "Saronite Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts\
+	and <b>2 Arctic Fur!</b>";
 	console.log(saroniteSummary)
 	console.log(titansteelBar)
         }
-        else if((saroniteBar *288) + (eternalFire * 12) + (eternalEarth * 12) + (eternalShadow * 12)
-	< titansteelBar * 12){		
+        else if(saroniteSummary	< titansteelSummary){		
 		var saronitePost=document.getElementById('total').innerHTML="Total cost: " + saroniteSummary + "g";
 		var saroniteShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Saronite Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur</b>!";
+	<b>" + saroniteAmount + " " + "Saronite Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur</b>!";
 	console.log(saroniteSummary + "null saronite")
 	console.log(titansteelBar)
 		}
@@ -105,7 +102,7 @@ if(titaniumBar == 0){
 		else {			
 			var titansteelPost=document.getElementById('total').innerHTML="Total cost: " + titansteelSummary + "g";
 			var titansteelShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titansteel Bars</b>, <b>Handful of Cobalt Bolts</b> and <b>Arctic Fur!</b>";
+	<b>12 Titansteel Bars</b>, <b>40 Handful of Cobalt Bolts</b> and <b>2 Arctic Fur!</b>";
 	console.log(titansteelSummary + "null titansteel")
 	console.log(titansteelBar)
 		}
@@ -115,18 +112,18 @@ else if(titansteelBar == 0) {
 		if(saroniteBar == 0){
 			var titaniumPost=document.getElementById('total').innerHTML="Total cost: " + titaniumSummary + "g";
 			var titaniumShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titanium Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>12 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(titaniumSummary)
 	console.log(titansteelBar)
 		}
 		
 		
- 		else if(saroniteBar * 288 < titaniumBar * 36){			
+ 		else if(saroniteSummary < titaniumSummary){			
 		    var saronitePost=document.getElementById('total').innerHTML="Total cost: " + saroniteSummary + "g";
 			var saroniteShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Saronite Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>" + saroniteAmount + " " + "Saronite Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(saroniteSummary)
 	console.log(titansteelBar)
 		}
@@ -134,26 +131,25 @@ else if(titansteelBar == 0) {
         else{			
 			var titaniumPost=document.getElementById('total').innerHTML="Total cost: " + titaniumSummary + "g";
 			var titaniumShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titanium Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(titaniumSummary)
 	console.log(titansteelBar)
 		}		
 	}
 else if(saroniteBar == 0){					
-	    if((titaniumBar * 36) + (eternalFire * 12) + (eternalEarth * 12)
-		+ (eternalShadow * 12) < titansteelBar * 12){
+	    if(titaniumSummary < titansteelSummary){
 			var titaniumPost=document.getElementById('total').innerHTML="Total cost: " + titaniumSummary + "g";
 			var titaniumShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titanium Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(titaniumSummary)
 	console.log(titansteelBar)
 		}
 	    else{
 			var titasteelPost=document.getElementById('total').innerHTML="Total cost: " + titansteelSummary + "g";
 		    var titansteelShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titansteel Bars</b>, <b>Handful of Cobalt Bolts</b> and <b>Arctic Fur!</b>";
+	<b>12 Titansteel Bars</b>, <b>40 Handful of Cobalt Bolts</b> and <b>2 Arctic Fur!</b>";
 	console.log(titansteelSummary)
 	console.log(titansteelBar)
 		}
@@ -166,13 +162,12 @@ else{
 saronite bars are cheaper then  titanium bars */
 
 
-    if((titaniumBar *36) + (eternalFire * 12) + (eternalEarth * 12) + (eternalShadow * 12)
-	 < titansteelBar * 12) {
-		if(saroniteBar * 288 < titaniumBar *36){			
+    if(titaniumSummary < titansteelSummary) {
+		if(saroniteSummary < titaniumSummary){			
 		    var saronitePost=document.getElementById('total').innerHTML="Total cost: " + saroniteSummary + "g";
 			var saroniteShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Saronite Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>" + saroniteAmount + " " + "Saronite Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(saroniteSummary)
 	console.log(titansteelBar)
 		}
@@ -180,8 +175,8 @@ saronite bars are cheaper then  titanium bars */
 		else {	    
 		    var titaniumPost=document.getElementById('total').innerHTML="Total cost: " + titaniumSummary + "g";
 			var titaniumShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titanium Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(titaniumSummary)
 	console.log(titansteelBar)
 	}
@@ -190,19 +185,18 @@ saronite bars are cheaper then  titanium bars */
 	
 	//checks if saronite bars are cheaper then titansteelbars //
 	
-	else if((saroniteBar *288) + (eternalFire * 12) + (eternalEarth * 12) + (eternalShadow * 12)
-    < titansteelBar * 12){
+	else if(saroniteSummary < titansteelSummary){
 		var saronitePost=document.getElementById('total').innerHTML="Total cost: " + saroniteSummary + "g";
 		var saroniteShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Saronite Bars</b>, <b>Eternal Fire</b>, <b>Eternal Earth</b>, <b>Eternal Shadow</b>, <b>Handful of Cobalt Bolts</b>\
-	and <b>Arctic Fur!</b>";
+	<b>" + saroniteAmount + " " + "Saronite Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b> 12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
+	and <b>2 Arctic Fur!</b>";
 	console.log(saroniteSummary)
 	console.log(titansteelBar)
 	}
 	else {
 		var titasteelPost=document.getElementById('total').innerHTML="Total cost: " + titansteelSummary + "g";
 		var titansteelShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>Titansteel Bars</b>, <b>Handful of Cobalt Bolts</b> and <b>Arctic Fur!</b>";
+	<b>12 Titansteel Bars</b>, <b>40 Handful of Cobalt Bolts</b> and <b>2 Arctic Fur!</b>";
 	console.log(titansteelSummary)
 	console.log(titansteelBar)
     }
