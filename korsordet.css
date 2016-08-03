@@ -2,11 +2,7 @@ body {
   padding: 0;
   }
   
-#page {
-  padding: 0px;
-  border:1px solid black;
-  margin: 0;
-}
+
 #ord {
   width: 40px;
   height: 40px;
