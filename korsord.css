@@ -1,4 +1,7 @@
 tr {
-  text-decorations: none;
   border: 1px black;
+  }
+  
+  td {
+    border: 1px black;
   }
