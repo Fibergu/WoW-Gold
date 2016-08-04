@@ -68,7 +68,11 @@ if(transmute.checked) {
     var saroniteAmount = 288;
  }
  
+ if(saroniteBar + titaniumBar + titansteelBar == 0) {
+	 var nonePost=document.getElementById('total').innerHTML="Total cost: 0g";
+ }
  
+ else{
  
  
  
@@ -200,6 +204,7 @@ saronite bars are cheaper then  titanium bars */
 	console.log(titansteelSummary)
 	console.log(titansteelBar)
     }
+}
 }
 }
 
