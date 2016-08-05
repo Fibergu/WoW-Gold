@@ -116,7 +116,7 @@ else if(titansteelBar == 0) {
 		if(saroniteBar == 0){
 			var titaniumPost=document.getElementById('total').innerHTML="Total cost: " + titaniumSummary + "g";
 			var titaniumShopping=document.getElementById('describe').innerHTML="You should buy\
-	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>12 Handful of Cobalt Bolts</b>\
+	<b>36 Titanium Bars</b>, <b>12 Eternal Fire</b>, <b>12 Eternal Earth</b>, <b>12 Eternal Shadow</b>, <b>40 Handful of Cobalt Bolts</b>\
 	and <b>2 Arctic Fur!</b>";
 	console.log(titaniumSummary)
 	console.log(titansteelBar)
