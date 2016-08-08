@@ -69,12 +69,14 @@ if(transmute.checked) {
  }
  
  if(saroniteBar + titaniumBar + titansteelBar == 0) {
-	 var nonePost=document.getElementById('total').innerHTML="Total cost: 0g";
 	 var hidePost=document.getElementById('describe').style.visibility = "hidden";
+	 var hideTotal=document.getElementById('total').style.visibility = "hidden";
  }
  
  else{
  var hidePost=document.getElementById('describe').style.visibility = "visible";
+ var hideTotal=document.getElementById('total').style.visibility = "visible";
+ 
  
  }
  
