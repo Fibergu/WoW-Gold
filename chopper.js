@@ -74,9 +74,9 @@ if(transmute.checked) {
  }
  
  else{
-
+ var hidePost=document.getElementById('describe').style.visibility = "visible";
  
- 
+ }
  
 if(titaniumBar == 0){
 		if(saroniteBar == 0) {		    
