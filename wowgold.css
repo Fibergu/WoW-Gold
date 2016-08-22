@@ -102,7 +102,69 @@ html, body {
 	margin-left: 68px;
 }
 
+#total_hexcost {
+	margin-left: 68px;
+}
+/*Sky golem*/
+#total_skygolem {
+	margin-left: 68px;
+}
+#ghost {
+	margin-left: 21px;
+}
+
+#trillium {
+	margin-left: 37px;
+}
+
+#livingsteel {
+	margin-left: 38px;
+}
 #describe {
 	margin-left: 68px;
 	font-size: 110%;
+}
+
+/*Chopper inputs*/
+#titansteel {
+	margin-left: 64px;
+	width: 160px;
+}
+
+#titanium {
+	margin-left: 69px;
+	width: 160px;
+}
+
+#saronite {
+	margin-left: 74px;
+	width: 160px;
+}
+
+#fire {
+	margin-left: 78px;
+	width: 160px;
+}
+
+#earth {
+	margin-left: 69px;
+	width: 160px;
+}
+
+#shadow {
+	margin-left: 52px;
+	width: 160px;
+}
+
+#bolts {
+	margin-left: 0px;
+	width: 160px;
+}
+
+#arctic {
+	margin-left: 88px;
+	width: 160px;
+}
+#transmute {
+	margin-left: 88px;
 }
