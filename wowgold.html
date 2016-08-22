@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="wowgold.css" />
+<meta charset="utf-8" />
+<script src="wowgold.js"></script>
+<title>Calculations</title>
+</head>
+<body>
+<!--TABS-->
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'London')">Hexweave bag</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Paris')">Sky Golem</a></li>
+  <li><a href="#" class="tablinks" onclick="openCity(event, 'Tokyo')">Chopper</a></li>
+</ul>
+
+<!--FIRST  TABCONTENT-->
+<div id="London" class="tabcontent">
+<div id="page">
+<div id="chopperTitle">
+<h1>Hexweave Bag</h1>
+</div>
+<div id="chopperInfo">
+
+<p>This tool will calculate the total cost for a Hexweave Bag using primal spirits to bypass the daily cooldown.
+</br></br>
+Set a price for <strong>"Sumptuous Fur"</strong> and <strong>"Material".</strong></br></br>
+<strong>"Sumptuous Fur"</strong> represents the Sumptous Furs needed to craft Hexweave cloth.</br></br>
+<strong>"Material"</strong> represents the material you use to trade for Primal Spirits, in other words: WoD herbs/ores/dust/fur and leather.
+</div>
+<p id="warning">*ONLY USE NUMBERS*</p>
+
+<h4 id="craft_cost">How much does it cost to craft a bag?</h4>
+<form id="chopper">
+
+Sumptuous Fur: <input type="text" id="fur"></br>
+
+Material: <input type="text" id="material"></br>
+
+<input type="button" onclick="totalHexweavePrice()" value="Calculate"</button>
+
+</form>
+
+<p id="total_hexcost"></p>
+</br>
+
+
+<!--How many bags you can make from x mats-->
+<h4 id="bag_amount">How many bags can I craft?</h4>
+
+<form id="chopper">
+Sumptuous Fur: <input type="text" id="fur_amount"></br>
+
+Material: <input type="text" id="material_amount"></br>
+
+<input type="button" onclick="totalHexweaveAmount()" value="Calculate"</button>
+</form>
+
+<p id="total_amount"></p>
+</div>
+</div>
+</div>
+
+
+
+<!--SKY GOLEM-->
+<div id="Paris" class="tabcontent">
+
+<div id="page">
+<div id="chopperTitle">
+<h1>Sky Golem</h1>
+</div>
+<div id="chopperInfo">
+
+<p>This tool will calculate the total cost for a Sky Golem
+and determine the cheapest way to craft it. </br></br>
+If you have <strong>Alchemy:</strong> Put a price in every box. </br></br>
+If you don't have <strong>Alchemy:</strong> Uncheck the alchemy box.</br></br>
+</p>
+</div>
+<p id="warning">*ONLY USE NUMBERS*</p></br>
+
+<form id="chopper">
+Ghost Iron Bar: <input type="text" id="ghost"></br>
+
+Living Steel: <input type="text" id="livingsteel"></br>
+
+Trillium Bar: <input type="text" id="trillium"></br>
+
+Spirit of Harmony: <input type="text" id="spirit"></br>
+
+<input type="button" onclick="skyGolem()" value="Calculate"</button>
+
+<input type="checkbox" id="transmute_skygolem">Transmutation Master
+
+<input type="checkbox" id="alchemy_skygolem" checked>Alchemy
+</form>
+
+<p id="total_skygolem"></p>
+</br>
+<p id="describe_skygolem"></p>
+</div>
+</div>
+</div>
+
+<!--CHOPPER-->
+
+<div id="Tokyo" class="tabcontent">
+
+<div id="page">
+<div id="chopperTitle">
+<h1>Mekgineer's Chopper/Mechano-Hog</h1>
+</div>
+<div id="chopperInfo">
+
+<p>This tool will calculate the total cost for a Chopper
+and determine the cheapest way to craft it. </br></br>
+If you have <strong>Mining</strong> and <strong>Alchemy:</strong> Put a price in every box. </br></br>
+If you don't have <strong>Alchemy:</strong> Put a price in every box except <b>"Saronite Bar"</b>.</br></br>
+If you don't have <strong>Mining:</strong> Put a price in every box except <b>"Saronite Bar"</b> and <b>"Titanium Bar"</b></br>
+</p>
+</div>
+<p id="warning">*ONLY USE NUMBERS*</p></br>
+
+<form id="chopper">
+Titansteel Bar: <input type="text" id="titansteel"></br>
+
+Titanium Bar: <input type="text" id="titanium"></br>
+
+Saronite Bar: <input type="text" id="saronite"></br>
+
+Eternal Fire: <input type="text" id="fire"></br>
+
+Eternal Earth: <input type="text" id="earth"></br>
+
+Eternal Shadow: <input type="text" id="shadow"></br>
+
+Handful of Cobalt Bolts: <input type="text" id="bolts"></br>
+
+Arctic Fur: <input type="text" id="arctic"></br>
+
+<input type="button" onclick="totalPrice()" value="Calculate"</button>
+
+<input type="checkbox" id="transmute">Transmutation Master
+</form>
+
+<p id="total"></p>
+</br>
+<p id="describe"></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>

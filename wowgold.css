@@ -1,0 +1,108 @@
+/*TABS WITH CONTENT*/
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* STYLING OF CONTENTS */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(220,220,220);
+}
+
+	
+	
+#page {
+    width: 505px;
+	margin:0 auto;
+	
+}
+
+
+#chopperInfo {
+	text-align: left;
+}
+
+#chopperTitle {
+	text-align: center;
+}
+
+#chopper {
+	margin-left: 65px;
+	
+}
+
+#fur {
+	margin-left: 5px;
+}
+
+#material {
+	margin-left: 49px;
+}
+
+#material_amount {
+	margin-left: 49px;
+}
+
+#fur_amount {
+	margin-left: 5px;
+}
+
+#total_amount {
+	margin-left: 68px;
+}
+#warning {
+	color: red;
+	text-align: center;
+}
+
+#craft_cost {
+	text-align: center;
+}
+
+#bag_amount {
+	text-align: center;
+}
+#total {
+	margin-left: 68px;
+}
+
+#describe {
+	margin-left: 68px;
+	font-size: 110%;
+}
