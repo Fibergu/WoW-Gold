@@ -1,0 +1,72 @@
+#tailoring tr, td {
+	border: solid 1px black;
+}
+
+#tailoring {
+	font-size: 20px;
+}
+
+#tailoring td {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+#mats {
+	font-size: 20px;
+}
+
+
+#calculate {
+	font-size: 25px;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	margin-left: 110px;
+	margin-top: 50px;
+}
+
+table {
+	text-align: center;
+}
+
+#center_table {
+	text-align: center;
+	width:900px;
+	height: 100px;
+	margin: auto;
+}
+
+#center_content {
+	
+	width: 500px;
+	height: 500px;
+	margin: auto;
+}
+
+
+#silkweave_amount {
+}
+
+#silkweave_price {
+	margin-left: 5px;
+}
+
+#chaos_crystal_price {
+	margin-left: 52px;
+}
+
+#obliterum_price {
+	margin-left: 82px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<link rel="stylesheet" href="Obliterum.css" />
+<meta charset="utf-8" />
+<script src="Obliterum.js"></script>
+<title>Calculations</title>
+</head>
+<body>
+
+<div id="center_table">
+<table id="tailoring">
+  <tr>
+    <td>Cost</td>
+	<td>Amount of crafts</td>
+	<td>Amount of Obliterum Ash</td>
+	<td>Amount of Chaos Crystals</td>
+	<td>Total value</td>
+	<td>Profit</td>
+	<td>%</td>
+  </tr>
+  
+    
+  
+  <tr>
+     <td id="cost">0g</td>
+	 <td id="craft_amount">0</td>
+	 <td id="obliterum_amount">0</td>
+	 <td id="chaos_amount">0</td>
+	 <td id="total_value">0g</td>
+	 <td id="profit">0g</td>
+	 <td id="percentage">0%</td>
+  </tr>
+</table>
+</div>
+</br>
+</br>
+
+<div id="center_content">
+
+<form id="mats">
+Amount of Shal'dorei Silk:  <input type="text" id="silkweave_amount"></br>
+
+Shal'dorei Silk cost(each): <input type="text" id="silkweave_price"></br>
+
+Chaos Crystal price:        <input type="text" id="chaos_crystal_price"></br>
+
+Obliterum price:            <input type="text" id="obliterum_price"></br>
+
+</form>
+
+<input type="button" id="calculate" onclick="tailoringObliterum()" value="Calculate"</button>
+</div>
+
+
+</body>
+</html>
